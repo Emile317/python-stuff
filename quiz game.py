@@ -1,3 +1,5 @@
+import time
+
 print('Welcome to the game! quiz')
 intro = input('Do you want to play? ')
 if intro != 'yes':
@@ -5,10 +7,11 @@ if intro != 'yes':
     quit()
 else:
     print('Yoo lets go then')
+    time.sleep(1)
 
 question1 = "Spell the word 'you' "
 question2 = "Keyboard and? "
-question3 = "Is Python a programming language or an animal "
+question3 = "Is Python a programming language or an animal? "
 answer1 = 'you'
 answer2 = 'mouse'
 answer3 = 'a programming language'
@@ -19,6 +22,7 @@ user_answer1 = input(question1)
 if user_answer1 == answer1:
     points += 1
     print("That's correct! You earned 1 point, you now have", points, 'points')
+    time.sleep(1)
 else:
     print("How on earth did you get that shit wrong? Piece of shit dumbass bitchass. The right answer is", answer1)
 
@@ -28,11 +32,13 @@ if proceed != 'yes':
     quit()
 else:
     print("Here comes the next question:")
+    time.sleep(1)
 
 user_answer2 = input(question2)
 if user_answer2 == answer2:
     points += 1
     print("That's correct! You earned 1 point, you now have", points, 'points')
+    time.sleep(1)
 else:
     print("I'm really starting to doubt you. The right answer is", answer2)
 
@@ -42,6 +48,7 @@ if proceed != 'yes':
     quit()
 else:
     print("Here comes the next question:")
+    time.sleep(1)
 
 user_answer3 = input(question3)
 if user_answer3 == answer3:
