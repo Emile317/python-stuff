@@ -23,6 +23,7 @@ what do you want to do?
         name = input('\nName (required): ')
         phone_num = input("Phone number (required): ")
         email = input("Email: ")
+        email_checker(email)
         address = input("Address: ")
         add(name, phone_num, email, address)
     elif action == 2:
@@ -102,5 +103,9 @@ def list_contacts():
     for contact in contact_book:
         print(contact)
     menu()
+
+def email_checker(email):
+    if email.count('@') == 0 or email.count('.') == 0:
+        print('Invalid email')
 
 menu()
